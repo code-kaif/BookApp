@@ -12,11 +12,14 @@ const MessegeMe = () => {
     e.preventDefault();
     setLoading(true);
     try {
-      const { data } = await axios.post("http://localhost:4001/email", {
-        name,
-        email,
-        message,
-      });
+      const { data } = await axios.post(
+        "https://bookapp-1-nuya.onrender.com/email",
+        {
+          name,
+          email,
+          message,
+        }
+      );
       setName("");
       setEmail("");
       setMessage("");
