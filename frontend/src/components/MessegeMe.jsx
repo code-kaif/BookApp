@@ -44,7 +44,7 @@ const MessegeMe = () => {
               <input
                 type="text"
                 placeholder="Enter Your Name"
-                className="input input-bordered w-[80vw] md:w-[30vw] my-3"
+                className="input input-bordered w-[80vw] md:w-[30vw] my-3 dark:text-slate-800"
                 name="name"
                 value={name}
                 onChange={(e) => setName(e.target.value)}
@@ -54,7 +54,7 @@ const MessegeMe = () => {
               <input
                 type="email"
                 placeholder="Enter Your Email"
-                className="input input-bordered w-[80vw] md:w-[30vw] my-3"
+                className="input input-bordered w-[80vw] md:w-[30vw] my-3 dark:text-slate-800"
                 name="email"
                 value={email}
                 onChange={(e) => setEmail(e.target.value)}
@@ -62,7 +62,7 @@ const MessegeMe = () => {
             </div>
             <div>
               <textarea
-                className="textarea textarea-bordered w-[80vw] md:w-[30vw] h-24 my-3"
+                className="textarea textarea-bordered w-[80vw] md:w-[30vw] h-24 my-3 dark:text-slate-800"
                 placeholder="Enter Your Messege"
                 name="message"
                 value={message}

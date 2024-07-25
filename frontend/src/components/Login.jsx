@@ -44,21 +44,21 @@ function Login() {
             {/* if there is a button in form, it will close the modal */}
             <Link
               to="/"
-              className="btn btn-sm btn-circle btn-ghost absolute right-2 top-2"
+              className="btn btn-sm btn-circle btn-ghost absolute right-2 top-2 dark:text-slate-800"
               onClick={() => document.getElementById("my_modal_3").close()}
             >
               ✕
             </Link>
 
-            <h3 className="font-bold text-lg">Login</h3>
+            <h3 className="font-bold text-lg dark:text-slate-800">Login</h3>
             {/* Email */}
             <div className="mt-4 space-y-2">
-              <span>Email</span>
+              <span className="dark:text-slate-800">Email</span>
               <br />
               <input
                 type="email"
                 placeholder="Enter your email"
-                className="w-80 px-3 py-3 border rounded-md outline-none"
+                className="w-80 px-3 py-3 border rounded-md outline-none dark:text-slate-800"
                 {...register("email", { required: true })}
               />
               <br />
@@ -70,12 +70,12 @@ function Login() {
             </div>
             {/* password */}
             <div className="mt-4 space-y-2">
-              <span>Password</span>
+              <span className="dark:text-slate-800">Password</span>
               <br />
               <input
                 type="password"
                 placeholder="Enter your password"
-                className="w-80 px-3 py-3 border rounded-md outline-none"
+                className="w-80 px-3 py-3 border rounded-md outline-none dark:text-slate-800"
                 {...register("password", { required: true })}
               />
               <br />
@@ -91,7 +91,7 @@ function Login() {
               <button className="bg-slate-700 text-white rounded-md px-4 py-2 hover:bg-slate-900 duration-200">
                 Login
               </button>
-              <p className="mt-2">
+              <p className="mt-2 dark:text-slate-800">
                 Not registered?{" "}
                 <Link
                   to="/signup"

@@ -4,6 +4,7 @@ import Login from "./Login";
 import Logout from "./Logout";
 import { useAuth } from "../context/AuthProvider";
 import { Link } from "react-router-dom";
+import Course from "./Course";
 
 function Navbar() {
   const [authUser, setAuthUser] = useAuth();

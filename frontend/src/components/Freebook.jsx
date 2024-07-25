@@ -1,12 +1,12 @@
 import React, { useEffect, useState } from "react";
-
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import Slider from "react-slick";
-
 import axios from "axios";
-
 import Cards from "./Cards";
+import Pages from "./Pages";
+import { Link } from "react-router-dom";
+
 function Freebook() {
   const [book, setBook] = useState([]);
   useEffect(() => {
@@ -72,11 +72,15 @@ function Freebook() {
         </div>
 
         <div>
-          <Slider {...settings}>
-            {book.map((item) => (
-              <Cards item={item} key={item.id} />
-            ))}
-          </Slider>
+          <Link to={"/pages"}>
+            <Slider {...settings}>
+              {book.map((item) => (
+                <>
+                  <Cards item={item} key={item.id} />
+                </>
+              ))}
+            </Slider>
+          </Link>
         </div>
       </div>
     </>
