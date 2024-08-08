@@ -2,14 +2,15 @@ import React, { useEffect, useState } from "react";
 import Cards from "./Cards";
 import axios from "axios";
 import { Link } from "react-router-dom";
+import { url } from "../main";
 function Course() {
   const [book, setBook] = useState([]);
   useEffect(() => {
     const getBook = async () => {
       try {
-        const res = await axios.get("https://bookapp-1-nuya.onrender.com/book");
-        console.log(res.data);
+        const res = await axios.get(`${url}/book`);
         setBook(res.data);
+        localStorage.setItem("Books", JSON.stringify(res.data));
       } catch (error) {
         console.log(error);
       }
@@ -36,13 +37,11 @@ function Course() {
             </button>
           </Link>
         </div>
-        <Link to={"/pages"}>
-          <div className="mt-12 grid grid-cols-1 md:grid-cols-4">
-            {book.map((item) => (
-              <Cards key={item.id} item={item} />
-            ))}
-          </div>
-        </Link>
+        <div className="mt-12 grid grid-cols-1 md:grid-cols-4">
+          {book.map((item) => (
+            <Cards key={item.id} item={item} />
+          ))}
+        </div>
       </div>
     </>
   );

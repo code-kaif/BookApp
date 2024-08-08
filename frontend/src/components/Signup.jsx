@@ -4,6 +4,7 @@ import Login from "./Login";
 import { useForm } from "react-hook-form";
 import axios from "axios";
 import toast from "react-hot-toast";
+import { url } from "../main";
 function Signup() {
   const location = useLocation();
   const navigate = useNavigate();
@@ -21,7 +22,7 @@ function Signup() {
       password: data.password,
     };
     await axios
-      .post("https://bookapp-1-nuya.onrender.com/user/signup", userInfo)
+      .post(`${url}/user/signup`, userInfo)
       .then((res) => {
         console.log(res.data);
         if (res.data) {

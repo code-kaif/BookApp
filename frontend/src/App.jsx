@@ -10,8 +10,7 @@ import About from "./about/About";
 import Pages from "./components/Pages";
 
 function App() {
-  const [authUser, setAuthUser] = useAuth();
-  console.log(authUser);
+  const { authUser, storeBook } = useAuth();
   return (
     <>
       <div className="dark:bg-slate-900 dark:text-white">
@@ -24,7 +23,7 @@ function App() {
           <Route path="/signup" element={<Signup />} />
           <Route path="/contact" element={<Contact />} />
           <Route path="/about" element={<About />} />
-          <Route path="/pages" element={<Pages />} />
+          <Route path="/course/:id" element={<Pages />} />
         </Routes>
         <Toaster />
       </div>

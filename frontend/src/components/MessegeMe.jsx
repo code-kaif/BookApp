@@ -2,6 +2,7 @@ import { React, useState } from "react";
 import axios from "axios";
 import { toast } from "react-hot-toast";
 import { ClipLoader } from "react-spinners";
+import { url } from "../main";
 
 const MessegeMe = () => {
   const [name, setName] = useState("");
@@ -12,14 +13,11 @@ const MessegeMe = () => {
     e.preventDefault();
     setLoading(true);
     try {
-      const { data } = await axios.post(
-        "https://bookapp-1-nuya.onrender.com/email",
-        {
-          name,
-          email,
-          message,
-        }
-      );
+      const { data } = await axios.post(`${url}/email`, {
+        name,
+        email,
+        message,
+      });
       setName("");
       setEmail("");
       setMessage("");

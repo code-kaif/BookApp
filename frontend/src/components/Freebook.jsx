@@ -6,14 +6,14 @@ import axios from "axios";
 import Cards from "./Cards";
 import Pages from "./Pages";
 import { Link } from "react-router-dom";
+import { url } from "../main";
 
 function Freebook() {
   const [book, setBook] = useState([]);
   useEffect(() => {
     const getBook = async () => {
       try {
-        const res = await axios.get("https://bookapp-1-nuya.onrender.com/book");
-
+        const res = await axios.get(`${url}/book`);
         const data = res.data.filter((data) => data.category === "Free");
         console.log(data);
         setBook(data);

@@ -7,7 +7,7 @@ import { Link } from "react-router-dom";
 import Course from "./Course";
 
 function Navbar() {
-  const [authUser, setAuthUser] = useAuth();
+  const { authUser } = useAuth();
   const [theme, setTheme] = useState(
     localStorage.getItem("theme") ? localStorage.getItem("theme") : "light"
   );
