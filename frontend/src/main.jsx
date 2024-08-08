@@ -5,7 +5,7 @@ import "./index.css";
 import { BrowserRouter } from "react-router-dom";
 import AuthProvider from "./context/AuthProvider.jsx";
 
-export const url = "http://localhost:4001";
+export const url = "https://bookapp-1-nuya.onrender.com";
 
 ReactDOM.createRoot(document.getElementById("root")).render(
   <BrowserRouter>
