@@ -4,10 +4,10 @@ import Login from "./Login";
 import Logout from "./Logout";
 import { useAuth } from "../context/AuthProvider";
 import { Link } from "react-router-dom";
-import Course from "./Course";
 
 function Navbar() {
-  const { authUser } = useAuth();
+  const { authUser, search, setSearch } = useAuth();
+  console.log(search);
   const [theme, setTheme] = useState(
     localStorage.getItem("theme") ? localStorage.getItem("theme") : "light"
   );
@@ -107,6 +107,9 @@ function Navbar() {
                   type="text"
                   className="grow outline-none rounded-md px-1 dark:bg-slate-800 dark:text-white"
                   placeholder="Search"
+                  onChange={(e) => {
+                    setSearch(e.target.value);
+                  }}
                 />
                 <svg
                   xmlns="http://www.w3.org/2000/svg"

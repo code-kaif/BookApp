@@ -64,7 +64,7 @@ function Freebook() {
         <div>
           <h1 className="font-semibold text-xl pb-2">Free Offered Books</h1>
           <p>
-            ChatGPT Free books represent a treasure trove of opportunity and
+            Free books represent a treasure trove of opportunity and
             accessibility in the world of literature. They encompass a wide
             range of content, from classic literature and public domain works to
             contemporary releases offered temporarily for promotional purposes.

@@ -34,7 +34,7 @@ const MessegeMe = () => {
       <div className="flex justify-center ">
         <form
           onSubmit={submitHandler}
-          className="w-[40vw] h-[60vh] flex flex-col items-center justify-between absolute top-40"
+          className="contact w-[40vw] h-[60vh] flex flex-col items-center justify-between absolute top-40"
         >
           <h1 className="text-3xl font-semibold">Contact</h1>
           <div>

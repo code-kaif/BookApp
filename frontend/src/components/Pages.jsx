@@ -23,7 +23,7 @@ const Pages = () => {
       <Navbar />
 
       <div
-        className="max-w-screen-2xl container mx-auto md:px-20 px-4 flex justify-center items-center md:flex-row flex-col my-20"
+        className="max-w-screen-2xl container mx-auto md:px-10 px-4 flex justify-center items-center md:flex-row flex-col relative top-20"
         // style={{ maxHeight: "calc(80vh-10vh)" }}
       >
         <div className="md:w-1/2 w-full flex justify-center items-center mt-5">

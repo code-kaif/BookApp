@@ -3,8 +3,10 @@ import Cards from "./Cards";
 import axios from "axios";
 import { Link } from "react-router-dom";
 import { url } from "../main";
+import { useAuth } from "../context/AuthProvider";
 function Course() {
   const [book, setBook] = useState([]);
+  const { search, setSearch } = useAuth();
   useEffect(() => {
     const getBook = async () => {
       try {
@@ -38,9 +40,15 @@ function Course() {
           </Link>
         </div>
         <div className="mt-12 grid grid-cols-1 md:grid-cols-4">
-          {book.map((item) => (
-            <Cards key={item.id} item={item} />
-          ))}
+          {book
+            .filter((item) => {
+              return search.toLowerCase() === ""
+                ? item
+                : item.name.toLowerCase().includes(search);
+            })
+            .map((item) => (
+              <Cards key={item.id} item={item} />
+            ))}
         </div>
       </div>
     </>

@@ -10,9 +10,17 @@ export default function AuthProvider({ children }) {
   const [storeBook, setStoreBook] = useState(
     initialStoreBooks ? JSON.parse(initialStoreBooks) : undefined
   );
+  const [search, setSearch] = useState("");
   return (
     <AuthContext.Provider
-      value={{ authUser, setAuthUser, storeBook, setStoreBook }}
+      value={{
+        authUser,
+        setAuthUser,
+        storeBook,
+        setStoreBook,
+        search,
+        setSearch,
+      }}
     >
       {children}
     </AuthContext.Provider>
