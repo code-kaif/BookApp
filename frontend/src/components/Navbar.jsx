@@ -6,8 +6,7 @@ import { useAuth } from "../context/AuthProvider";
 import { Link } from "react-router-dom";
 
 function Navbar() {
-  const { authUser, search, setSearch } = useAuth();
-  console.log(search);
+  const { authUser, setSearch } = useAuth();
   const [theme, setTheme] = useState(
     localStorage.getItem("theme") ? localStorage.getItem("theme") : "light"
   );
@@ -44,7 +43,7 @@ function Navbar() {
         <Link to="/">Home</Link>
       </li>
       <li>
-        <Link to="/course">Course</Link>
+        <Link to="/course">Books</Link>
       </li>
       <li>
         <Link to="/contact">Contact</Link>
@@ -94,7 +93,7 @@ function Navbar() {
               </ul>
             </div>
             <Link to={"/"} className=" text-2xl font-bold cursor-pointer">
-              bookStore
+              BookHeaven
             </Link>
           </div>
           <div className="navbar-end space-x-3">

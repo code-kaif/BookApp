@@ -7,7 +7,7 @@ const About = () => {
   return (
     <>
       <Navbar />
-      <div className=" min-h-screen">
+      <div className=" min-h-screen md:mb-0 mb-24">
         <AboutMe />
       </div>
       <Footer />

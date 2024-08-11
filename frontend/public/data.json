@@ -1,0 +1,170 @@
+[
+  {
+    "id": {
+      "$numberInt": "1"
+    },
+    "name": "1984",
+    "author": "George Orwell",
+    "view": "https://www.planetebook.com/free-ebooks/1984.pdf",
+    "title": "A masterpiece of rebellion and imprisonment where war is peace freedom is slavery and Big Brother is watching Thought Police Big Brother Orwellian These words have entered our vocabulary because of George Orwell s classic dystopian novel 1984 The story of one man s nightmare odyssey as he pursues a forbidden love affair through a world ruled by warring states and a power structure that controls not only information",
+    "price": {
+      "$numberInt": "0"
+    },
+    "category": "Free",
+    "image": "https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1657781256i/61439040.jpg"
+  },
+  {
+    "id": {
+      "$numberInt": "2"
+    },
+    "name": "Mody Dick",
+    "author": "Herman Melville",
+    "view": "https://www.gutenberg.org/files/2701/2701-h/2701-h.htm",
+    "title": "Widely considered one of the great American novels, Herman Melville’s masterpiece went largely unread during his lifetime and was out of print at the time of his death in 1891. Called the greatest book about the sea ever written by D.H. Lawrence, Moby Dick features detailed descriptions of whale hunting and whale oil extraction as well as beautiful.",
+    "price": {
+      "$numberInt": "0"
+    },
+    "category": "Free",
+    "image": "https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1677832801i/36190564.jpg"
+  },
+  {
+    "id": {
+      "$numberInt": "3"
+    },
+    "name": "Jane Eyre",
+    "author": "Charlotte Brontë",
+    "view": "https://www.gutenberg.org/files/1260/1260-h/1260-h.htm",
+    "title": "Charlotte Brontë tells the story of orphaned Jane Eyre, who grows up in the home of her heartless aunt, enduring loneliness and cruelty. This troubled childhood strengthens Jane's natural independence and spirit - which prove necessary when she finds employment as a governess to the young ward of Byronic, brooding Mr Rochester.",
+    "price": {
+      "$numberInt": "0"
+    },
+    "category": "Free",
+    "image": "https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1557343311i/10210.jpg"
+  },
+  {
+    "id": {
+      "$numberInt": "4"
+    },
+    "name": "The Hobbit",
+    "author": "J.R.R. Tolkien",
+    "view": "https://rsd2-alert-durden-reading-room.weebly.com/uploads/6/7/1/6/6716949/the_hobbit_tolkien.pdf",
+    "title": "In a hole in the ground there lived a hobbit. Not a nasty, dirty, wet hole, filled with the ends of worms and an oozy smell, nor yet a dry, bare, sandy hole with nothing in it to sit down on or to eat: it was a hobbit-hole, and that means comfort.\n",
+    "price": {
+      "$numberInt": "0"
+    },
+    "category": "Free",
+    "image": "https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1546071216i/5907.jpg"
+  },
+  {
+    "id": {
+      "$numberInt": "5"
+    },
+    "name": "The Alchemist",
+    "author": "Paulo Coelho",
+    "view": "https://ia801006.us.archive.org/13/items/OceanofPDF.comTheAlchemist/_OceanofPDF.com_The_Alchemist.pdf",
+    "title": "Combining magic, mysticism, wisdom, and wonder into an inspiring tale of self-discovery, The Alchemist has become a modern classic, selling millions of copies around the world and transforming the lives of countless readers across generations.",
+    "price": {
+      "$numberInt": "100"
+    },
+    "category": "Paid",
+    "image": "https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1654371463i/18144590.jpg"
+  },
+  {
+    "id": {
+      "$numberInt": "6"
+    },
+    "name": "To Kill a Mockingbird",
+    "author": "Harper Lee",
+    "view": "https://www.raio.org/TKMFullText.pdf",
+    "title": "The unforgettable novel of a childhood in a sleepy Southern town and the crisis of conscience that rocked it. \"To Kill A Mockingbird\" became both an instant bestseller and a critical success when it was first published in 1960. It went on to win the Pulitzer Prize in 1961 and was later made into an Academy Award-winning film, also a classic.",
+    "price": {
+      "$numberInt": "50"
+    },
+    "category": "Paid",
+    "image": "https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1553383690i/2657.jpg"
+  },
+  {
+    "id": {
+      "$numberInt": "7"
+    },
+    "name": "The Great Gatsby",
+    "author": "F. Scott Fitzgerald",
+    "view": "https://www.planetebook.com/free-ebooks/the-great-gatsby.pdf",
+    "title": "The Great Gatsby, F. Scott Fitzgerald's third book, stands as the supreme achievement of his career. This exemplary novel of the Jazz Age has been acclaimed by generations of readers. The story of the fabulously wealthy Jay Gatsby and his love for the beautiful Daisy Buchanan, of lavish parties on Long Island at a time.",
+    "price": {
+      "$numberInt": "100"
+    },
+    "category": "Paid",
+    "image": "https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1490528560i/4671.jpg"
+  },
+  {
+    "id": {
+      "$numberInt": "8"
+    },
+    "name": "Pride and Prejudice",
+    "author": "Jane Austen",
+    "view": "https://www.gutenberg.org/files/1342/1342-h/1342-h.htm",
+    "title": "Since its immediate success in 1813, Pride and Prejudice has remained one of the most popular novels in the English language. Jane Austen called this brilliant work \"her own darling child\" and its vivacious heroine, Elizabeth Bennet, \"as delightful a creature as ever appeared in print.",
+    "price": {
+      "$numberInt": "100"
+    },
+    "category": "Paid",
+    "image": "https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1320399351i/1885.jpg"
+  },
+  {
+    "id": {
+      "$numberInt": "9"
+    },
+    "name": "The Catcher in the Rye",
+    "author": "J.D. Salinger",
+    "view": "http://giove.isti.cnr.it/demo/eread/Libri/sad/Rye.pdf",
+    "title": "Fleeing the crooks at Pencey Prep, he pinballs around New York City seeking solace in fleeting encounters—shooting the bull with strangers in dive hotels, wandering alone round Central Park, getting beaten up by pimps and cut down by erstwhile girlfriends. The city is beautiful and terrible.",
+    "price": {
+      "$numberInt": "0"
+    },
+    "category": "Free",
+    "image": "https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1398034300i/5107.jpg"
+  },
+  {
+    "id": {
+      "$numberInt": "10"
+    },
+    "name": "Brave New World",
+    "author": "Aldous Huxley",
+    "view": "https://ia601300.us.archive.org/15/items/BraveNewWorld-and-BraveNewWorldRevisited/Brave-New-World_-_Aldous-Huxley.pdf",
+    "title": "Aldous Huxley's profoundly important classic of world literature, Brave New World is a searching vision of an unequal, technologically-advanced future where humans are genetically bred, socially indoctrinated, and pharmaceutically anesthetized to passively uphold an authoritarian ruling order–all at the cost of our freedom.",
+    "price": {
+      "$numberInt": "100"
+    },
+    "category": "Paid",
+    "image": "https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1575509280i/5129.jpg"
+  },
+  {
+    "id": {
+      "$numberInt": "11"
+    },
+    "name": "The Grapes of Wrath",
+    "author": "John Steinbeck",
+    "view": "https://www.fadedpage.com/showbook.php?pid=20220149",
+    "title": "The Pulitzer Prize-winning epic of the Great Depression, a book that galvanized—and sometimes outraged—millions of readers.\n\nFirst published in 1939, Steinbeck’s Pulitzer Prize-winning epic of the Great Depression chronicles the Dust Bowl migration of the 1930s and tells the story of one Oklahoma farm family.",
+    "price": {
+      "$numberInt": "0"
+    },
+    "category": "Free",
+    "image": "https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1375670575i/18114322.jpg"
+  },
+  {
+    "id": {
+      "$numberInt": "12"
+    },
+    "name": "Crime and Punishment",
+    "author": "Fyodor Dostoevsky",
+    "view": "https://www.gutenberg.org/files/2554/2554-h/2554-h.htm",
+    "title": "Raskolnikov, a destitute and desperate former student, wanders through the slums of St Petersburg and commits a random murder without remorse or regret. He imagines himself to be a great man, a Napoleon: acting for a higher purpose beyond conventional moral law.",
+    "price": {
+      "$numberInt": "50"
+    },
+    "category": "Paid",
+    "image": "https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1382846449i/7144.jpg"
+  }
+]

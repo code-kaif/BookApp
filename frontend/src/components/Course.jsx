@@ -6,7 +6,7 @@ import { url } from "../main";
 import { useAuth } from "../context/AuthProvider";
 function Course() {
   const [book, setBook] = useState([]);
-  const { search, setSearch } = useAuth();
+  const { authUser, search } = useAuth();
   useEffect(() => {
     const getBook = async () => {
       try {
@@ -23,6 +23,9 @@ function Course() {
     <>
       <div className=" max-w-screen-2xl container mx-auto md:px-20 px-4">
         <div className="mt-28 items-center justify-center text-center">
+          <h1 className="text-3xl  md:text-5xl mb-3">
+            Welcome <span className="text-slate-500">{authUser.fullname}</span>
+          </h1>
           <h1 className="text-2xl  md:text-4xl">
             We're delighted to have you{" "}
             <span className="text-slate-500"> Here! :)</span>

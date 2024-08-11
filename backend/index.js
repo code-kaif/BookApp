@@ -4,7 +4,7 @@ import dotenv from "dotenv";
 import cors from "cors";
 import bookRoute from "./route/book.route.js";
 import userRoute from "./route/user.route.js";
-import { sendMail } from "./middleware/sentMail.js";
+import emailRouter from "./route/email.route.js";
 
 const app = express();
 
@@ -29,32 +29,7 @@ try {
 // defining routes
 app.use("/book", bookRoute);
 app.use("/user", userRoute);
-
-app.post("/email", async (req, res) => {
-  const { name, email, message } = req.body;
-  if (!name || !email || !message)
-    return res.status(400).json({
-      success: false,
-      message: "Plz fill all detail",
-    });
-  try {
-    await sendMail({
-      email: "sad928370@gmail.com",
-      subject: "Book Store",
-      message,
-      userEmail: email,
-    });
-    res.status(200).json({
-      success: true,
-      message: "Messege Send Successfully",
-    });
-  } catch (error) {
-    res.status(500).json({
-      success: false,
-      message: "Internal server error",
-    });
-  }
-});
+app.use("/email", emailRouter);
 
 app.listen(PORT, () => {
   console.log(`Server is listening on port ${PORT}`);

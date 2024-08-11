@@ -7,16 +7,24 @@ const AboutMe = () => {
         <div className="flex flex-col justify-center items-center space-y-4 md:space-y-10">
           <h1 className="text-4xl md:text-5xl font-semibold">About</h1>
           <p>
-            In the heart of the bustling city, nestled between the old brick
-            buildings and modern glass facades, lies a sanctuary of knowledge
-            and imagination: the book store. Its exterior, adorned with colorful
-            posters and a weathered sign bearing the store's name in elegant
-            script, beckons both the casual passerby and the dedicated reader
-            alike. Upon entering, one is enveloped by the comforting scent of
-            aged paper and ink, a nostalgic perfume that whispers of countless
-            stories waiting to be discovered. The soft rustling of pages being
-            turned and the occasional murmur of conversation create a symphony
-            that resonates with the love of literature.
+            Welcome to BookHeaven, your gateway to a world of stories,
+            knowledge, and inspiration. Nestled in the heart of Delhi, our
+            bookstore is more than just a place to buy books—it's a community of
+            readers, thinkers, and dreamers.
+            <br />
+            <br />
+            Founded in 2024, BookHeaven began with a simple mission: to bring
+            the joy of reading to everyone. What started as a small passion
+            project has grown into a beloved local hub for book lovers of all
+            ages. We believe in the magic of books—the way they can transport
+            you to distant lands, introduce you to fascinating characters, and
+            open your mind to new ideas.
+            <br />
+            <br />
+            Thank you for supporting independent bookstores and for being a part
+            of our story.
+            <br />
+            Happy Reading!
           </p>
         </div>
       </div>

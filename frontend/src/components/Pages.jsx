@@ -1,7 +1,7 @@
 import axios from "axios";
 import React, { useEffect, useState } from "react";
 import Navbar from "./Navbar";
-import { useParams } from "react-router-dom";
+import { Link, useParams } from "react-router-dom";
 import { url } from "../main";
 
 const Pages = () => {
@@ -27,14 +27,21 @@ const Pages = () => {
         // style={{ maxHeight: "calc(80vh-10vh)" }}
       >
         <div className="md:w-1/2 w-full flex justify-center items-center mt-5">
-          <img src={bookO.image} alt="Book Image" className="w-[500px]" />
+          <img
+            src={bookO.image}
+            alt="Book Image"
+            className="w-[500px] h-[400px] rounded-lg object-contain"
+          />
         </div>
-        <div className="md:w-1/2 w-full flex justify-center flex-col items-start md:space-y-5 space-y-3">
+        <div className="md:w-1/2 w-full flex justify-center flex-col items-start md:space-y-5 space-y-3 my-10">
           <h1 className="text-4xl font-bold">{bookO.name}</h1>
+          <h2 className="text-3xl font-bold">by {bookO.author}</h2>
           <p className="text-lg w-full">{bookO.title}</p>
-          <div className="md:w-[19%] w-[35%] cursor-pointer px-5 py-3 rounded-full border-[2px] bg-slate-700 text-white hover:bg-white hover:text-slate-700 duration-200">
-            Buy Now
-          </div>
+          <Link to={bookO.view} target="_blank">
+            <div className="md:w-[100%] w-[100%] cursor-pointer px-5 py-3 rounded-full border-[2px] bg-slate-700 text-white hover:bg-white hover:text-slate-700 duration-200">
+              Want to Learn
+            </div>
+          </Link>
         </div>
       </div>
     </>

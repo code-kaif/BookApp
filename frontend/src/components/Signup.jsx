@@ -30,6 +30,7 @@ function Signup() {
           navigate(from, { replace: true });
         }
         localStorage.setItem("Users", JSON.stringify(res.data.user));
+        window.location.reload();
       })
       .catch((err) => {
         if (err.response) {

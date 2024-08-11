@@ -4,8 +4,6 @@ import "slick-carousel/slick/slick-theme.css";
 import Slider from "react-slick";
 import axios from "axios";
 import Cards from "./Cards";
-import Pages from "./Pages";
-import { Link } from "react-router-dom";
 import { url } from "../main";
 
 function Freebook() {
@@ -15,7 +13,6 @@ function Freebook() {
       try {
         const res = await axios.get(`${url}/book`);
         const data = res.data.filter((data) => data.category === "Free");
-        console.log(data);
         setBook(data);
       } catch (error) {
         console.log(error);
@@ -72,15 +69,13 @@ function Freebook() {
         </div>
 
         <div>
-          <Link to={"/pages"}>
-            <Slider {...settings}>
-              {book.map((item) => (
-                <>
-                  <Cards item={item} key={item.id} />
-                </>
-              ))}
-            </Slider>
-          </Link>
+          <Slider {...settings}>
+            {book.map((item) => (
+              <>
+                <Cards item={item} key={item.id} />
+              </>
+            ))}
+          </Slider>
         </div>
       </div>
     </>
